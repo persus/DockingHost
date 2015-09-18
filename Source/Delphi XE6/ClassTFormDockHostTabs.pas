@@ -24,12 +24,13 @@ uses
   VCL.Forms,
   VCL.Graphics,
 
+  ClassTFormDockableBase,
   ClassTFormDockable;
 {$ENDREGION}
 
 type
 
-  TFormDockHostTabs = class(TFormDockable)
+  TFormDockHostTabs = class(TFormDockableBase)
   protected
     function GetStandardCloseAction: TCloseAction; override;
     function GetIconIndex(const DockClient: TWinControl): Integer; virtual;

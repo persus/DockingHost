@@ -29,7 +29,6 @@ type
     function Get_BoundsRect: TRect;
     procedure Set_BoundsRect(const Rect: TRect);
 
-    function DockingIsAllowed(const DockClient: TControl): Boolean;
     procedure UpdateCaption(const Exclude: TControl);
 
     function GetStandardDockHost: TWinControl;

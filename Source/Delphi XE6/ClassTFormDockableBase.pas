@@ -67,6 +67,7 @@ type
     function GetStandardCloseAction: TCloseAction; virtual;
     procedure SetStandardCloseAction(const Value: TCloseAction); virtual;
 
+    function DockingIsAllowed(const DockClient: TControl): Boolean;
     function UndockingIsAllowed(const Client: TControl; const NewTarget: TWinControl): Boolean;
   {$ENDREGION}
 
@@ -90,8 +91,6 @@ type
     function GetStandardDockHost: TWinControl; virtual; abstract;
     function Get_BoundsRect: TRect;
     procedure Set_BoundsRect(const Rect: TRect);
-
-    function DockingIsAllowed(const DockClient: TControl): Boolean;
     procedure UpdateCaption(const Exclude: TControl); virtual; abstract;
 
   published
