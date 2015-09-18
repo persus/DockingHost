@@ -107,7 +107,6 @@
             <Form>FormDockHostTabs</Form>
         </DCCReference>
         <DCCReference Include="ClassTDockingHelper.pas"/>
-        <DCCReference Include="ClassTTransparentDragControlObject.pas"/>
         <DCCReference Include="ClassTTransparentDragDockObject.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

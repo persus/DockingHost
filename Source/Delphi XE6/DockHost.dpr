@@ -17,7 +17,6 @@ uses
   ClassTFormDockHostJoin in 'ClassTFormDockHostJoin.pas' {FormDockHostJoin},
   ClassTFormDockHostTabs in 'ClassTFormDockHostTabs.pas' {FormDockHostTabs},
   ClassTDockingHelper in 'ClassTDockingHelper.pas',
-  ClassTTransparentDragControlObject in 'ClassTTransparentDragControlObject.pas',
   ClassTTransparentDragDockObject in 'ClassTTransparentDragDockObject.pas';
 
 {$R *.res}

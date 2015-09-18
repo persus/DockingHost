@@ -31,9 +31,11 @@ uses
 type
 
   TFormMain = class(TFormDockHost)
-    procedure FormCreate(Sender: TObject);
   private
     procedure SetAsMainForm;
+
+  public
+    procedure AfterConstruction; override;
 
   published
     tb_Main: TToolBar;
@@ -44,7 +46,7 @@ type
     act_Dynamic: TAction;
 
     procedure act_DynamicExecute(Sender: TObject);
-    procedure AfterConstruction; override;
+    procedure FormCreate(Sender: TObject);
   end;
 
 var
